@@ -1,0 +1,10 @@
+fastf1>=3.0.0
+pandas
+numpy
+requests
+matplotlib
+seaborn
+scikit-learn
+psaw       # optional if you wanted pushshift for reddit — not needed here but harmless
+tqdm
+python-dateutil
