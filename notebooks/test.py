@@ -116,6 +116,12 @@ for idx in session.laps.index:
     row.update(meta)
     rows.append(row) 
     
+'''
+    Saving the raw csv & json here to have a absolute checkpoint to come back to
+'''
+
+
+
     
 df = pd.DataFrame(rows)
 df = df.sort_values(by=['driver_name','lap_number'])
@@ -132,3 +138,5 @@ df.loc[
     groups['lap_time'].idxmin(),
     'lap_time_best_on_tyre'
  ] = True
+
+
