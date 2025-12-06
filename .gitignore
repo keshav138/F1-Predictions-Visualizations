@@ -1,6 +1,59 @@
-.venv/
+# ---- Python & IDE ----
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.swp
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.ENV/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Data (do NOT commit heavy data) ----
+data/cache/
 data/raw/
 data/clean/
-data/cache/
+data/features/
+
+# allow small sample directory
+!data/sample/
+
+# if you have many intermediate files
+*.csv
+*.json
+# keep small sample files by whitelisting data/sample above
+
+
+# ---- Logs ----
+data/pipeline_logs/
+*.log
+
+# ---- Python packaging/build ----
+dist/
+build/
+*.egg-info/
+
+# ---- Machine learning artifacts ----
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.ckpt
+
+# ---- Misc ----
+*.sqlite
+*.db
+
+
+#----VSCODE-----
+.vscode/
