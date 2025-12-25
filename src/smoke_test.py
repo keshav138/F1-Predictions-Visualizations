@@ -1,3 +1,6 @@
 from pipeline import process_round,process_season
 
-print(process_season(2021))
+years = [2021, 2022, 2023, 2024, 2025]
+
+for year in years:
+    print(process_season(year))
